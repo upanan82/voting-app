@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Poll - Voting App</title>
+		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="/controllers/jquery.js"></script>
+		<script type="text/javascript" src="/controllers/post.js"></script>
+		<script type="text/javascript" src="/controllers/chart.js"></script>
+	</head>
+	<header></header>
+	<body>
+		<div class="container">
+			<h2 id="titlePol"></h1>
+			<canvas id="myChart" style='display: block; width: 540px; height: 270px;'></canvas><br><br>
+			<form onsubmit="pollFunc(); return false;">
+				<input placeholder="Own option:" type="text" id="own"><br>
+			    <select id="select"></select>
+				<input type="button" value="Submit" class="btn btn-primary" onclick="pollFunc(); return false;"><br><br>
+				<input type="button" value="Share on Twitter" class="btn btn-primary btn1" onclick="tweet(); return false;">
+				<input type="button" value="Remove this poll" class="btn btn-primary btn2" onclick="remove(); return false;">
+			</form><br><br>
+			<p>by <a class="a" target='_blank' href="https://github.com/upanan82">upanan82</a></p>
+		</div>
+	</body>
+</html>

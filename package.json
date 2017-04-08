@@ -1,0 +1,23 @@
+{
+  "name": "Voting App",
+  "version": "0.2.5",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.13.3",
+    "body-parser": "^1.17.1",
+    "mongodb": "^2.2.24",
+    "dotenv": "^1.2.0",
+    "express-session": "^1.11.3",
+    "passport": "^0.3.0",
+    "passport-github": "^1.0.0"
+  },
+  "author": "upanan82",
+  "license": "MIT"
+}
